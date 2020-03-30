@@ -55,6 +55,7 @@
     <Compile Include="AbstractModels\TEntity.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="JSONObjects\OrderJSON.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\DateTimeHelper.cs" />
   </ItemGroup>

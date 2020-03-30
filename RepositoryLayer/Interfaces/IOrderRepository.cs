@@ -1,4 +1,5 @@
-﻿using ModelsLayer.Models;
+﻿using InfrastructureLayer.JSONObjects;
+using ModelsLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace RepositoryLayer.Interfaces
 {
     public interface IOrderRepository : IGenericRepository<Order , int>
     {
+        bool SubmitOrder(OrderJSON order);
     }
 }
