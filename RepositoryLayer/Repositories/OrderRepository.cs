@@ -17,6 +17,18 @@ namespace RepositoryLayer.Repositories
         {
         }
 
+        public List<OrderJSON> GetAllOrders()
+        {
+            return GetAll().AsEnumerable().Select(p => new OrderJSON
+            {
+                SaladAmount = p.SaladAmount,
+                BaconAmount = p.BaconAmount,
+                MeatAmount = p.MeatAmount,
+                CheeseAmount = p.CheeseAmount,
+                ID = p.ID
+            }).ToList();
+        }
+
         public bool SubmitOrder(OrderJSON order)
         {
             using (var dbContextTransaction = Context.Database.BeginTransaction())

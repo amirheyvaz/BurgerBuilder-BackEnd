@@ -23,6 +23,15 @@ namespace BurgerBuilder.Controllers
             return orderRep.SubmitOrder(order);
         }
 
+        [Route("Orders")]
+        [HttpPost]
+        public List<OrderJSON> GetAllOrders()
+        {
+            var orderRep = IocConfig.Container.GetInstance<IOrderRepository>();
+            return orderRep.GetAllOrders();
+
+        }
+
         [Route("Hello")]
         [HttpGet]
         public string hello()

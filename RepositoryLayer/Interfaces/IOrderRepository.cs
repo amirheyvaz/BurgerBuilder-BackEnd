@@ -11,5 +11,6 @@ namespace RepositoryLayer.Interfaces
     public interface IOrderRepository : IGenericRepository<Order , int>
     {
         bool SubmitOrder(OrderJSON order);
+        List<OrderJSON> GetAllOrders();
     }
 }

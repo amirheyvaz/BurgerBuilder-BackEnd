@@ -8,6 +8,7 @@ namespace InfrastructureLayer.JSONObjects
 {
     public class OrderJSON
     {
+        public int ID { get; set; }
         public int SaladAmount { get; set; }
         public int CheeseAmount { get; set; }
         public int MeatAmount { get; set; }
