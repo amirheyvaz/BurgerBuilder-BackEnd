@@ -41,7 +41,12 @@ namespace RepositoryLayer.Repositories
                                     SaladAmount = order.SaladAmount,
                                     CheeseAmount = order.CheeseAmount,
                                     BaconAmount = order.BaconAmount,
-                                    MeatAmount = order.MeatAmount
+                                    MeatAmount = order.MeatAmount,
+                                    Address = order.Address,
+                                    PhoneNumber = order.PhoneNumber,
+                                    FirstName = order.FirstName,
+                                    LastName = order.LastName,
+                                    EmailAddress = order.EmailAddress
                                 };
                                 Add(new_item, true);
 

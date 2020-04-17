@@ -57,6 +57,10 @@
     <Compile Include="Migrations\202003292029081_init.designer.cs">
       <DependentUpon>202003292029081_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004170902425_990129.cs" />
+    <Compile Include="Migrations\202004170902425_990129.designer.cs">
+      <DependentUpon>202004170902425_990129.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +68,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202003292029081_init.resx">
       <DependentUpon>202003292029081_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004170902425_990129.resx">
+      <DependentUpon>202004170902425_990129.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
