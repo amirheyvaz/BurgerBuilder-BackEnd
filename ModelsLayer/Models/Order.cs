@@ -22,7 +22,10 @@ namespace ModelsLayer.Models
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
 
+        public int UserID { get; set; }
 
+        [ForeignKey("UserID")]
+        public virtual User User { get; set; }
 
     }
 }

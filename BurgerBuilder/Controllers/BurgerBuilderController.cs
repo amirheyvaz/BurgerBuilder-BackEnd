@@ -8,9 +8,11 @@ using System.Web.Http;
 using System.Web.Http.Cors;
 using BurgerBuilder.Core;
 using RepositoryLayer.Interfaces;
+using BurgerBuilder.Filters;
 
 namespace BurgerBuilder.Controllers
 {
+    [JwtAuthentication]
     [RoutePrefix("api/BurgerBuilder")]
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class BurgerBuilderController : ApiController
@@ -38,5 +40,27 @@ namespace BurgerBuilder.Controllers
         {
             return "Hello";
         }
+
+
+
+        //[Route("Validate")]
+        //[HttpPost]
+        //public bool ValidateToken(string token, string UserName)
+        //{
+        //    var User = IocConfig.Container.GetInstance<IUserRepository>(); 
+        //    if (User.SelectBy(u => u.UserName == UserName).Any()) return false;
+
+        //    string tokenUsername = TokenManager.ValidateToken(token);
+        //    if (UserName.Equals(tokenUsername))
+        //    {
+        //        return true;
+        //    }
+
+
+        //    return false;
+        //}
+
+
+
     }
 }

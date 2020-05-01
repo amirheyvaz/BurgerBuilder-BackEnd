@@ -14,9 +14,10 @@ namespace ModelsLayer.DataContext
     {
 
         public DbSet<Order> Orders { set; get;}
+        public DbSet<User> Users { set; get; }
 
 
-     
+
 
         protected override void Dispose(bool disposing)
         {

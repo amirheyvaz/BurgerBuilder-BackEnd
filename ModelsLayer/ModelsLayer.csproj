@@ -61,8 +61,13 @@
     <Compile Include="Migrations\202004170902425_990129.designer.cs">
       <DependentUpon>202004170902425_990129.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005010742405_990212.cs" />
+    <Compile Include="Migrations\202005010742405_990212.designer.cs">
+      <DependentUpon>202005010742405_990212.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +76,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004170902425_990129.resx">
       <DependentUpon>202004170902425_990129.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005010742405_990212.resx">
+      <DependentUpon>202005010742405_990212.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

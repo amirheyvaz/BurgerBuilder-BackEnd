@@ -14,6 +14,9 @@ namespace BurgerBuilder
             // Web API configuration and services
             config.EnableCors();
 
+            // Web API configuration and services
+            config.Filters.Add(new AuthorizeAttribute());
+
 
             // Web API routes
             config.MapHttpAttributeRoutes();
